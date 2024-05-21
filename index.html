@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Watermarking by Unsil Informatics</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>Watermaking digital</h2>
+        <div class="wrap">
+          <label for="imageInput">Unggah Photo Original</label>
+          <input type="file" id="imageInput" accept="image/*" />
+        </div>
+        <div class="wrap">
+          <label for="watermarkTextInput">Tambah teks Watermark</label>
+          <input
+            type="text"
+            id="watermarkTextInput"
+            placeholder="Tulis Watermark.."
+          />
+        </div>
+        <div class="wrap">
+          <label for="watermarkImageInput">Unggah gambar Watermark</label>
+          <input type="file" id="watermarkImageInput" accept="image/*" />
+        </div>
+
+        <button id="addWatermark">Terapkan Watermark</button>
+      </div>
+
+      <figure>
+        <canvas id="watermarkedCanvas"></canvas>
+        <button id="downloadButton" disabled>Unduh Hasil Watermark</button>
+      </figure>
+    </main>
+
+    <script src="script.js"></script>
+    <!-- <script src="bak-script.js"></script> -->
+  </body>
+</html>
